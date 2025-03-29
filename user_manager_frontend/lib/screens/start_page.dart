@@ -19,7 +19,7 @@ class StartPage extends StatelessWidget{
                )),
               SizedBox(height: 30.0,),
               SizedBox(
-                width: 200,
+                width: 170,
                 child: ElevatedButton(
                   onPressed: (){
                     Navigator.push(
@@ -28,9 +28,9 @@ class StartPage extends StatelessWidget{
                     );
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color.fromARGB(255, 0, 0, 0),
+                    backgroundColor: Colors.blueGrey,
                     padding: EdgeInsets.symmetric(
-                      vertical: 18,
+                      vertical: 20,
                     )
                   ),
                   child: Text("Get Started", style: TextStyle(
