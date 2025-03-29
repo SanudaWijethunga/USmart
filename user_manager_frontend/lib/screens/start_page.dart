@@ -15,17 +15,29 @@ class StartPage extends StatelessWidget{
               Text("Hello, Welcome to USmart",
                style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 20.0
+                fontSize: 22.0
                )),
               SizedBox(height: 30.0,),
-              ElevatedButton(
-                onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPage()));
-                },
-                child: Text("Get Started", style: TextStyle(
-                  color: Colors.black,
-                ),),
-              ),
+              SizedBox(
+                width: 170,
+                child: ElevatedButton(
+                  onPressed: (){
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => LoginPage())
+                    );
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.blueGrey,
+                    padding: EdgeInsets.symmetric(
+                      vertical: 20,
+                    )
+                  ),
+                  child: Text("Get Started", style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 15.0
+                  ),)),
+              )
             ],
           ),
         )
